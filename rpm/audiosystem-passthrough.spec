@@ -45,7 +45,7 @@ Binder android.hardware.audio@2.0 dummy service.
 %setup -q -n %{name}-%{version}
 
 %build
-%make_build
+%make_build KEEP_SYMBOLS=1
 
 %install
 rm -rf %{buildroot}
